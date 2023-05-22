@@ -142,7 +142,9 @@
 
 ---
 
-  <br />
+    <br />
   <div align="center">
     <a href="https://github.com/mgkkm/meerkats-frontend" alt="meerkats FE repo">👉🏻 FE Team Repository로 이동하고 싶다면 클릭해주세요! 👈🏻</a>
   </div>
+    <br />
+    <br />

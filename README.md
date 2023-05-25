@@ -140,11 +140,24 @@
     <br />
     <br />
 
+  <div align="center">
+  <h1>🎡 배포</h1>
+  <br />
+  <h3>AWS S3를 이용하여 배포 완료</h3>
+  <p><a href="https://www.meerkats.moster">meerkats 페이지로 놀러오세요!</a></p>
+  </div>
+  
+   <br />
+   <br />
+
 ---
 
   <br />
   <div align="center">
-    <a href="https://github.com/mgkkm/meerkats-frontend" alt="meerkats FE repo">👉🏻 FE Team Repository로 이동하고 싶다면 클릭해주세요! 👈🏻</a>
+  <a href="https://github.com/mgkkm/meerkats-frontend">
+     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white"/>
+     <p>☝🏻 FE Team Repository로 이동하고 싶다면 클릭해주세요! ☝🏻</p>
+  </a>
   </div>
     <br />
     <br />

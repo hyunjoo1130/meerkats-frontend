@@ -118,8 +118,11 @@
     <br />
   <h1>❸ 블로그 메인 페이지</h1>
   <h3>⭐️ 무한 스크롤 기능 구현</h3>
-  <p>- Intersection Observer API 을 활용 (useRef 로 target 잡은 요소와 viewport 의 교차점을 감지해, 다음 데이터를 통신하여 받아온다.)</p>
-  <p>- 더 추가하기</p>
+  <p>- Intersection Observer API 을 활용 (useRef 로 target 잡은 요소와 viewport 의 교차점을 감지해, 콜백함수를 실행시키는 원리)</p>
+  <p>- 관찰될, target이 될 객체(observer)를 하단에 div태그로 만들어 useRef로 설정한다</p>
+  <p>- entries는 관찰하는 요소(observer)가 들어가있는 배열로, 현재 관찰될 요소는 1개이므로 entries[0]을 사용한다.</p>
+  <p>- entries 배열 내 요소인 entry의 속성인 isIntersecting()함수를 사용하여 관찰대상(observer)이 보이면 true, 보이지 않으면 false로 true인 경우 계속해서 다음 데이터를 받아올 useEffect 페칭 함수를 실행시킨다.</p>
+  <p>- 데이터는 6개씩 받아오기로 기획했으므로, offset을 리렌더링 될때마다 6씩 더해준다.</p>
     <br />
   <h3>⭐️ 조건부 렌더링</h3>
   <h3>🎯 스포/미스포 토글</h3>

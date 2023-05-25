@@ -144,7 +144,7 @@
   <h1>🎡 배포</h1>
   <br />
   <h3>AWS S3를 이용하여 배포 완료</h3>
-  <p><a href="https://www.meerkats.moster">meerkats 페이지로 놀러오세요!</a></p>
+  <p><a href="https://www.meerkats.monster">meerkats 페이지로 놀러오세요!</a></p>
   </div>
   
    <br />

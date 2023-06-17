@@ -26,6 +26,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ChosunGs';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGs.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -43,16 +51,20 @@ body {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #f96400;
+  @apply py-12 px-28 text-white max-md:hidden sm:text-2xl md:px-10 md:py-8 md:text-4xl xl:text-6xl;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply text-7xl opacity-70;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #f96400;
+  @apply bg-mkOrange;
 }
 
 .ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline {
-  min-height: 600px;
-  margin-bottom: 20px;
+  @apply min-h-[600px] mb-5;
 }
 
 input[type='number']::-webkit-inner-spin-button,
@@ -60,7 +72,156 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
-/* .toggle {
-  background-color: #f96400;
-  border-color: #f96400;
-} */
+#dash {
+  @apply w-1/3 border-none h-px mx-auto xl:my-32 md:my-24 sm:my-20 xs:my-12;
+}
+
+#dash {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.blogPost {
+  /* @apply @apply 주면 tailwind 클래스명으로 디자인 줄 수 있음! */
+  position: relative;
+  height: 75%;
+  padding-bottom: 0.5rem;
+  margin: 2rem 2rem 4rem;
+  background: white;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.blogThumbnail {
+  height: 18rem;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.blogTextTitle {
+  margin: 3rem 1.75rem 0 1.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.blogTextInfo {
+  margin: 0.75rem 1.75rem 1.5rem 1.75rem;
+  font-size: 0.875rem;
+}
+
+.blogTextBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 0.5rem;
+  margin: 0 1.75rem;
+  background: #fff;
+}
+
+.blogLike {
+  display: flex;
+  align-items: center;
+}
+
+.blogLikeImg {
+  display: inline-block;
+  width: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.spoTag {
+  position: absolute;
+  top: 0;
+  left: 1.25rem;
+  width: 3rem;
+  height: 3.5rem;
+  text-align: center;
+  border-radius: 0 0 0.375rem 0.375rem;
+}
+
+.spoTxt {
+  display: block;
+  padding-top: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.socialLoginBtn {
+  position: relative;
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999px;
+  text-align: center;
+}
+
+.socialLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+}
+
+@media (min-width: 360px) {
+  .blogPost {
+    margin: 2rem 2rem 2rem;
+  }
+
+  .blogThumbnail {
+    height: 16rem;
+  }
+
+  .blogTextTitle {
+    margin: 2.5rem 1.5rem 0 1.5rem;
+    font-size: 1.15rem;
+  }
+
+  .blogTextInfo {
+    margin: 0.5rem 1.5rem 1.2rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .blogTextBottom {
+    padding: 0.7rem 0 0.4rem;
+    margin: 0 1.5rem;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 640px) {
+  .blogPost {
+    width: 75%;
+    margin: 2rem auto 3rem;
+  }
+
+  .blogThumbnail {
+    height: 20rem;
+  }
+
+  .blogTextTitle {
+    margin: 4rem 1.75rem 0 1.75rem;
+  }
+
+  .socialLoginBtn {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blogPost {
+    width: 43%;
+    margin: 2rem 1.5rem 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .blogPost {
+    width: 28.7%;
+    margin: 2rem 1.2rem 3rem;
+  }
+}
